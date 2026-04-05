@@ -8,27 +8,10 @@
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-> Full-stack MERN Bookstore containerized with Docker, deployed on AWS EC2
+> Full-stack MERN Bookstore containerized with production level Dockerfile and docker-compose.yml, deployed on AWS EC2
 
 🌐 **Live Demo:** [http://13.205.178.68](http://13.205.178.68)
 
----
-
-## 🖥️ Live Preview
-
-### 🏠 Home Page
-![Home Page](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/home.png)
-
-### 📊 Admin Dashboard
-![Admin Dashboard](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/admin.png)
-
-### 👤 User Dashboard
-![User Dashboard](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/dashboard.png)
-
-### 🔐 Login Page
-![Login Page](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/login.png)
-
----
 
 ## 🏗️ Architecture
 ```
@@ -76,8 +59,8 @@ mern-bookstore/
 ## 🚀 Quick Start
 ```bash
 # Clone karo
-git clone https://github.com/YOUR_USERNAME/mern-bookstore.git
-cd mern-bookstore
+https://github.com/biswajit7815/bookstore-deployment.git
+cd booksstore-deployment
 
 # Environment setup
 cp .env.example .env
@@ -189,8 +172,7 @@ docker exec -it mongodb_services mongosh -u admin -p pass --authenticationDataba
 **Biswajit Behera**
 *DevOps Engineer*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_PROFILE)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_USERNAME)
+[![LinkedIn](www.linkedin.com/in/biswajit-behera-1b564031a)
 
 ---
 
