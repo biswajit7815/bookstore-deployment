@@ -8,13 +8,30 @@
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
-> Full-stack MERN Bookstore containerized with prosuction level Docker and docker-compose.yml, deployed on AWS EC2
+> Full-stack MERN Bookstore containerized with Docker, deployed on AWS EC2
 
-🌐 Live Demo: [http://13.205.178.68](http://13.205.178.68)
+🌐 **Live Demo:** [http://13.205.178.68](http://13.205.178.68)
 
+---
 
-# 🏗️ Architecture
+## 🖥️ Live Preview
 
+### 🏠 Home Page
+![Home Page](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/home.png)
+
+### 📊 Admin Dashboard
+![Admin Dashboard](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/admin.png)
+
+### 👤 User Dashboard
+![User Dashboard](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/dashboard.png)
+
+### 🔐 Login Page
+![Login Page](https://raw.githubusercontent.com/YOUR_USERNAME/mern-bookstore/master/images/login.png)
+
+---
+
+## 🏗️ Architecture
+```
 Internet
     ↓
 AWS EC2 (Ubuntu) - Elastic IP: 13.205.178.68
@@ -26,16 +43,22 @@ AWS EC2 (Ubuntu) - Elastic IP: 13.205.178.68
 │                  ↓              │
 │             MongoDB:27017       │
 └─────────────────────────────────┘
+```
 
-# 🐳 Docker Services
+---
 
+## 🐳 Docker Services
+```
 mern-bookstore/
 ├── 🍃 mongodb        → Database + Persistent Volume
 ├── 🟢 backend        → Node.js API (Port 5000)
 ├── ⚛️  frontend-build → Vite Build Container
 └── 🔀 nginx          → Reverse Proxy (Port 80)
+```
 
-# ✨ Features
+---
+
+## ✨ Features
 
 | Feature | Status |
 |---------|--------|
@@ -48,9 +71,10 @@ mern-bookstore/
 | 🐳 Dockerized | ✅ |
 | ☁️ AWS EC2 Deployed | ✅ |
 
+---
 
 ## 🚀 Quick Start
-bash
+```bash
 # Clone karo
 git clone https://github.com/YOUR_USERNAME/mern-bookstore.git
 cd mern-bookstore
@@ -61,11 +85,12 @@ cp .env.example .env
 
 # Deploy!
 docker-compose up -d --build
+```
 
 ---
 
 ## 📁 Project Structure
-
+```
 mern-bookstore/
 ├── 📁 backend/
 │   ├── 📁 src/
@@ -88,11 +113,14 @@ mern-bookstore/
 ├── 📁 images/          ← Screenshots
 ├── docker-compose.yml
 └── README.md
+```
 
-# 🔧 Environment Variables
+---
 
-*Root .env
-env
+## 🔧 Environment Variables
+
+**Root `.env`**
+```env
 MONGO_USER=your_username
 MONGO_PASS=your_password
 VITE_API_KEY=firebase_api_key
@@ -101,8 +129,9 @@ VITE_PROJECT_ID=project_id
 VITE_STORAGE_BUCKET=project.appspot.com
 VITE_MESSAGING_SENDERID=sender_id
 VITE_APPID=app_id
+```
 
-backend/.env
+**`backend/.env`**
 ```env
 DB_URL=mongodb://user:pass@mongodb_services:27017/bookdb?authSource=admin
 PORT=5000
