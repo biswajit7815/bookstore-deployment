@@ -60,7 +60,7 @@ mern-bookstore/
 ```bash
 # Clone karo
 https://github.com/biswajit7815/bookstore-deployment.git
-cd booksstore-deployment
+cd bookstore-deployment
 
 # Environment setup
 cp .env.example .env
